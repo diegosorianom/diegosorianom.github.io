@@ -8,24 +8,20 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="fixed top-0 left-0 w-full h-full flex flex-col justify-between p-4">
-
-        <!-- Fila de botones de arriba -->
-        <div class="flex flex-col space-y-2 absolute left-5">
-            <button class="bg-blue-500 w-32 text-white py-2 px-4 rounded transition-shadow-bg hover:bg-blue-900 duration-200 hover:shadow-lg transform hover:scale-110 ">Button 1</button>
-            <button class="bg-blue-500 w-32 text-white py-2 px-4 rounded transition-shadow-bg hover:bg-blue-900 duration-200 hover:shadow-lg transform hover:scale-110 ">Button 2</button>
-            <button class="bg-blue-500 w-32 text-white py-2 px-4 rounded transition-shadow-bg hover:bg-blue-900 duration-200 hover:shadow-lg transform hover:scale-110 ">Button 3</button>
+<body class="font-montserrat">
+    <div class="w-full h-screen bg-[#060902] flex flex-col">
+      <div class="fixed w-full h-[10%] flex flex-row items-center justify-between px-10">
+        <div class="w-12 h-12 bg-[url(img/logo.png)] bg-no-repeat bg-center bg-contain"></div>
+      </div>
+      <div class="w-full h-[90%] flex flex-col justify-end p-10 bg-[url(img/background.jpg)] bg-no-repeat bg-center bg-contain">
+        <div class="flex flex-col justify-end w-[50%] h-[80%]">
+          <p class="text-7xl md:text-8xl lg:text-9xl xl:text-10xl font-extrabold leading-none text-white mix-blend-difference">SOUND</p>
+          <p class="text-7xl md:text-8xl lg:text-9xl xl:text-10xl font-extrabold leading-none text-white mix-blend-difference">SCOPES</p>
         </div>
-
-        <div class="flex items-center justify-center h-screen">
-            <div class="text-center p-6 border border-gray-300 rounded-lg shadow-lg">
-                <h1 class="text-2xl font-bold mb-4">Título Centrando</h1>
-                <p class="text-gray-700">Este es un texto centrado dentro de una zona. Puedes personalizar el contenido como desees.</p>
-            </div>
-        </div>
-
+      </div>
     </div>
+    <div class="w-full h-screen bg-green-500"></div>
 </body>
 </html>
