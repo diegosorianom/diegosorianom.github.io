@@ -6,22 +6,103 @@
     <title>Diego Soriano Github Pages</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Inconsolata', monospace;
+        }
+        .hidden-content {
+          display: none;
+        }
+    </style>
 </head>
-<body class="font-montserrat">
-    <div class="w-full h-screen bg-[#060902] flex flex-col">
-      <div class="fixed w-full h-[10%] flex flex-row items-center justify-between px-10">
-        <div class="w-12 h-12 bg-[url(img/logo.png)] bg-no-repeat bg-center bg-contain"></div>
-      </div>
-      <div class="w-full h-[90%] flex flex-col justify-end p-10 bg-[url(img/background.jpg)] bg-no-repeat bg-center bg-contain">
-        <div class="flex flex-col justify-end w-[50%] h-[80%]">
-          <p class="text-7xl md:text-8xl lg:text-9xl xl:text-10xl font-extrabold leading-none text-white mix-blend-difference">SOUND</p>
-          <p class="text-7xl md:text-8xl lg:text-9xl xl:text-10xl font-extrabold leading-none text-white mix-blend-difference">SCOPES</p>
+<body class="h-screen flex justify-center items-center p-0 md:p-0 lg:p-6 xl:p-12 bg-[#FFFDE6]">
+    <div class="border border-black w-full h-full flex flex-col">
+        <!-- infobar -- comienzo -->
+        <div class="w-full p-2 md:p-3 lg:p-2 xl:p-2 flex flex-row justify-between items-center bg-[#181818]">
+            <div class="text-sm md:text-base lg:text-lg xl:text-xl text-[#FFFDE6] font-semibold">
+                Portfolio · Diego Soriano
+            </div>
+            <div class="text-sm md:text-base lg:text-lg xl:text-xl text-[#FFFDE6] font-semibold">
+                07/10/2024
+            </div>
         </div>
-      </div>
+        <!-- infobar -- final -->
+        <!-- navbar -- comienzo  -->
+        <div class="w-full h-12 border-b border-[#181818] flex flex-row">
+            <div class="flex flex-[7] flex-row items-center justify-start px-3">
+                <button onclick="changeToHome()" class="h-full w-12 flex items-center justify-center">
+                    <img src="/img/svg/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="home" class="h-8 w-8">                
+                </button>
+                <button onclick="changeToProyectos()" class="h-full w-12 flex items-center justify-center">
+                    <img src="/img/svg/folder_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="home" class="h-8 w-8">                
+                </button>
+                <button onclick="changeToSobreMi()" class="h-full w-12 flex items-center justify-center">
+                    <img src="/img/svg/emoji_people_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="home" class="h-8 w-8">                
+                </button>
+            </div>
+            <button onclick="changeToContacto()" class="flex flex-[4] md:flex-[2] lg:flex-[2] xl:flex-[2] flex-row items-center justify-center border-l border-r border-[#181818] transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] text-xl md:text-xl lg:text-xl xl:text-2xl text-[#181818] font-semibold">
+                Contacto
+            </button>
+            <button class="flex flex-[1] flex-row items-center justify-center">
+                <img src="/img/svg/dark_mode_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="home" class="h-8 w-8">
+            </button>            
+        </div>
+        <!-- navbar -- final  -->
+        <!-- main content -- comienzo -->
+        <div id="main-content" class="w-full h-full">
+            <div class="w-full h-full flex flex-col">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl p-6">
+                    Portfolio 2024 <br> <strong>Diego Soriano Magallón</strong>
+                </h1>
+                <div class="w-full border-t border-b border-[#181818] p-6">
+                    <p class="text-justify text-lg md:text-xl lg:text-2xl xl:text-2xl">Mi nombre es Diego Soriano Magallón, un desarrollador Full-Stack ubicado en Zaragoza. <br>
+                    Actualmente me encuentro estudiando un grado superior de Desarrollo de Aplicaciones Multiplataforma. <br>
+                    Mi pasión es la programación y el desarrollo Front-End.</p>
+                </div>            
+                <div class="w-full flex flex-col">
+                    <h2 class="text-3xl md:text-3xl lg:text-4xl xl:text-5xl mt-6 p-6">
+                        Puntos de interés
+                    </h2>
+                    <div class="flex flex-col w-full">
+                        <button onclick="changeToProyectos()" class="flex items-center justify-between px-6 py-2 border-t border-b border-[#181818] transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] text-lg md:text-xl lg:text-2xl xl:text-2xl text-[#181818] font-semibold w-full" id="proyectosButton">
+                          <p>Proyectos</p>
+                          <p>01</p>
+                        </button>
+                        <button onclick="changeToSobreMi()" class="flex items-center justify-between px-6 py-2 transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] text-lg md:text-xl lg:text-2xl xl:text-2xl text-[#181818] font-semibold w-full">
+                            <p>Sobre mí</p>
+                            <p>02</p>
+                        </button>
+                        <button onclick="changeToContacto()" class="flex items-center justify-between px-6 py-2 border-t border-b border-[#181818] transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] text-lg md:text-xl lg:text-2xl xl:text-2xl text-[#181818] font-semibold w-full">
+                            <p>Contacto</p>
+                            <p>03</p>
+                        </button>                     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main content -- final -->
+        <!-- footer -- comienzo -->
+        <div class="w-full bg-[#181818] p-2 md:p-3 lg:p-2 xl:p-2">
+            <div class="text-sm md:text-base lg:text-lg xl:text-xl text-[#FFFDE6] font-semibold flex justify-center items-center">
+                <p>Diego Soriano Magallón 2024</p>
+                <div class="flex flex-row justify-center items-center mx-6">
+                    <a class="px-2" href="https://github.com/diegosorianom" target="_blank" rel="noopener noreferrer">
+                        <img src="/img/github_logo_light.png" alt="github" class="h-6 w-6">
+                    </a>
+                    <a class="px-2" href="https://www.linkedin.com/in/diego-soriano-8779002a9/" target="_blank" rel="noopener noreferrer">
+                        <img src="/img/linkedin_logo_light.png" alt="linkedin" class="h-6 w-6">
+                    </a>
+                    <a class="px-2" href="mailto:diegosorianomagallon@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/img/svg/mail_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="mail" class="h-7 w-7">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- footer -- final -->
     </div>
-    <div class="w-full h-screen bg-green-500"></div>
-</body>
+
+    <script src='app.js'></script>
+  </body>
 </html>
