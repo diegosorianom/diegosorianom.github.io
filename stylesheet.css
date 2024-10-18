@@ -2,3 +2,7 @@
     background: #181818;
     color: #FFFDE6;
 }
+
+::-webkit-scrollbar {
+    width: 0px;
+}

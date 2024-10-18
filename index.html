@@ -19,7 +19,7 @@
 </head>
 <body class="h-screen flex justify-center items-center p-0 md:p-0 lg:p-6 xl:p-12 bg-[#FFFDE6]">
     <div class="border border-black w-full h-full flex flex-col">
-        <!-- infobar -- comienzo -->
+        <!-- infobar -->
         <div class="w-full p-2 md:p-3 lg:p-2 xl:p-2 flex flex-row justify-between items-center bg-[#181818]">
             <div class="text-sm md:text-base lg:text-lg xl:text-xl text-[#FFFDE6] font-semibold">
                 Portfolio · Diego Soriano
@@ -28,8 +28,7 @@
                 07/10/2024
             </div>
         </div>
-        <!-- infobar -- final -->
-        <!-- navbar -- comienzo  -->
+        <!-- navbar -->
         <div class="w-full h-12 border-b border-[#181818] flex flex-row">
             <div class="flex flex-[7] flex-row items-center justify-start px-3">
                 <button onclick="changeToHome()" class="h-full w-12 flex items-center justify-center">
@@ -49,66 +48,57 @@
                 <img src="/img/svg/dark_mode_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="home" class="h-8 w-8">
             </button>            
         </div>
-        <!-- navbar -- final  -->
-        <!-- main content -- comienzo -->
-        <!-- <div id="main-content" class="w-full h-full">
-            <div class="w-full h-full flex flex-col">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl p-6">
-                    Portfolio 2024 <br> <strong>Diego Soriano Magallón</strong>
-                </h1>
-                <div class="w-full border-t border-b border-[#181818] p-6">
-                    <p class="text-justify text-lg md:text-xl lg:text-2xl xl:text-2xl">Mi nombre es Diego Soriano Magallón, un desarrollador Full-Stack ubicado en Zaragoza. <br>
-                    Actualmente me encuentro estudiando un grado superior de Desarrollo de Aplicaciones Multiplataforma. <br>
-                    Mi pasión es la programación y el desarrollo Front-End.</p>
-                </div>            
-                <div class="w-full flex flex-col">
-                    <h2 class="text-3xl md:text-3xl lg:text-4xl xl:text-5xl mt-6 p-6">
-                        Puntos de interés
-                    </h2>
-                    <div class="flex flex-col w-full">
-                        <button onclick="changeToProyectos()" class="flex items-center justify-between px-6 py-2 border-t border-b border-[#181818] transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] text-lg md:text-xl lg:text-2xl xl:text-2xl text-[#181818] font-semibold w-full" id="proyectosButton">
-                          <p>Proyectos</p>
-                          <p>01</p>
-                        </button>
-                        <button onclick="changeToSobreMi()" class="flex items-center justify-between px-6 py-2 transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] text-lg md:text-xl lg:text-2xl xl:text-2xl text-[#181818] font-semibold w-full">
-                            <p>Sobre mí</p>
-                            <p>02</p>
-                        </button>
-                        <button onclick="changeToContacto()" class="flex items-center justify-between px-6 py-2 border-t border-b border-[#181818] transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] text-lg md:text-xl lg:text-2xl xl:text-2xl text-[#181818] font-semibold w-full">
-                            <p>Contacto</p>
-                            <p>03</p>
-                        </button>                     
+        <!-- main content -->
+        <div id="main-content" class="w-full h-full flex flex-col justify-between">
+            <!-- Contenido inicial aquí -->
+            <!-- <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl p-6">
+                Portfolio 2024 <br> <strong>Diego Soriano Magallón</strong>
+            </h1>
+            <div class="w-full border-t border-b border-[#181818] p-6">
+                <p class="text-justify text-lg md:text-xl lg:text-2xl xl:text-2xl">Mi nombre es Diego Soriano Magallón, un desarrollador Full-Stack ubicado en Zaragoza. <br>
+                Actualmente me encuentro estudiando un grado superior de Desarrollo de Aplicaciones Multiplataforma. <br>
+                Mi pasión es la programación y el desarrollo Front-End.</p>
+            </div>            
+            <div class="w-full flex flex-col">
+                <h2 class="text-3xl md:text-3xl lg:text-4xl xl:text-5xl mt-6 p-6">
+                    Puntos de interés
+                </h2>
+                <div class="flex flex-col w-full">
+                    <button onclick="changeToProyectos()" class="flex items-center justify-between px-6 py-2 border-t border-b border-[#181818] transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] text-lg md:text-xl lg:text-2xl xl:text-2xl text-[#181818] font-semibold w-full" id="proyectosButton">
+                      <p>Proyectos</p>
+                      <p>01</p>
+                    </button>
+                    <button onclick="changeToSobreMi()" class="flex items-center justify-between px-6 py-2 transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] text-lg md:text-xl lg:text-2xl xl:text-2xl text-[#181818] font-semibold w-full">
+                        <p>Sobre mí</p>
+                        <p>02</p>
+                    </button>
+                    <button onclick="changeToContacto()" class="flex items-center justify-between px-6 py-2 border-t border-b border-[#181818] transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] text-lg md:text-xl lg:text-2xl xl:text-2xl text-[#181818] font-semibold w-full">
+                        <p>Contacto</p>
+                        <p>03</p>
+                    </button>                     
+                </div>
+            </div> -->
+            <div>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl p-6"><strong>${project.title}</strong></h1>
+                <p class="text-lg md:text-xl lg:text-2xl xl:text-2xl p-6">${project.description}</p>
+                <div class="mt-4 px-6">
+                    <h2 class="text-lg md:text-xl lg:text-2xl xl:text-2xl"><strong>Detalles:</strong></h2>
+                    <p>${project.details}</p>
+                </div>
+                <div class="mt-6 overflow-x-auto">
+                    <div class="flex space-x-4 p-6">
+                        <img src="ruta/a/imagen1.jpg" alt="Imagen 1" class="h-48 w-auto flex-shrink-0">
+                        <img src="ruta/a/imagen2.jpg" alt="Imagen 2" class="h-48 w-auto flex-shrink-0">
+                        <img src="ruta/a/imagen3.jpg" alt="Imagen 3" class="h-48 w-auto flex-shrink-0">
+                        <!-- Añade más imágenes según sea necesario -->
                     </div>
                 </div>
             </div>
-        </div> -->
-        <!-- main content -- final -->
-        <!-- proyecto content -- comienzo -->
-        <div id="main-content" class="w-full h-screen">
-            <div class="w-full h-full flex flex-col">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl p-6">
-                    <strong>Proyectos</strong>
-                </h1>
-                <div class="flex-1 bg-[#181818]">
-                    <div class="h-full w-full overflow-y-scroll">
-                        <!-- Contenido aquí -->
-                        <p class="text-white p-6">Contenido que puede exceder el espacio...</p>
-                        <p class="text-white p-6">Más contenido...</p>
-                        <p class="text-white p-6">Aún más contenido...</p>
-                        <p class="text-white p-6">Contenido adicional...</p>
-                        <p class="text-white p-6">Contenido que excede el espacio...</p>
-                        <p class="text-white p-6">Contenido adicional...</p>
-                        <p class="text-white p-6">Contenido adicional...</p>
-                        <p class="text-white p-6">Contenido adicional...</p>
-                        <p class="text-white p-6">Contenido adicional...</p>
-                    </div>
-                </div>
-            </div>
+            <button onclick="changeToProyectos()" class="flex items-center justify-between px-6 py-2 border-t border-b border-[#181818] transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] text-lg md:text-xl lg:text-2xl xl:text-2xl text-[#181818] font-semibold w-full" id="proyectosButton">
+                <p>Volver atrás</p>
+            </button>
         </div>
-        
-        
-        <!-- proyecto content -- final -->
-        <!-- footer -- comienzo -->
+        <!-- footer -->
         <div class="w-full bg-[#181818] p-2 md:p-3 lg:p-2 xl:p-2">
             <div class="text-sm md:text-base lg:text-lg xl:text-xl text-[#FFFDE6] font-semibold flex justify-center items-center">
                 <p>Diego Soriano Magallón 2024</p>
@@ -125,9 +115,8 @@
                 </div>
             </div>
         </div>
-        <!-- footer -- final -->
     </div>
 
     <script src='app.js'></script>
-  </body>
+</body>
 </html>
