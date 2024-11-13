@@ -1,7 +1,7 @@
 // app.js
 const routes = {
-    // home: 'index.html',
-    proyectos: 'index.html',
+    home: '/templates/home.html',
+    proyectos: '/templates/proyectos.html',
     sobreMi: '/templates/sobremi.html',
     contacto: '/templates/contacto.html'
 };
