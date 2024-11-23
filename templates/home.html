@@ -1,3 +1,28 @@
-<div id="main-content" class="w-full h-full flex flex-col justify-between overflow-y-auto">
-    <p>Hola</p>
+<div id="main-content" class="w-full h-full flex flex-col overflow-y-auto">
+    <h1 class="text-3xl md:text-5xl lg:text-6xl xl:text-6xl p-6 border-b border-[#181818]"> Página de <br> <strong> Diego Soriano Magallón </strong></h1>
+    <p class="text-base md:text-lg lg:text-xl xl:text-2xl p-6 border-b border-[#181818] bg-[#181818] text-[#FFFDE6]"> ¡Hola! Soy Diego Soriano, programador de Zaragoza, España. Me apasiona el diseño de interfaces (UI/UX) y el desarrollo de videojuegos, creando experiencias visuales atractivas y fáciles de usar. </p>
+<div class="flex flex-col space-y-4 py-4">
+    <p class="text-md md:text-lg lg:text-xl xl:text-3xl font-bold px-6">Accesos rápidos</p>
+    <button onclick="router.loadContent('proyectos')" class="w-full border-t border-b border-[#181818] py-2 text-2xl transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] flex justify-between items-center px-6">
+        Ir a proyectos
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+    </button>
+    
+    <button onclick="router.loadContent('sobreMi')" class="w-full border-t border-b border-[#181818] py-2 text-2xl transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] flex justify-between items-center px-6">
+        Ir a sobre mí
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+    </button>
+
+    <button onclick="router.loadContent('contacto')" class="w-full border-t border-b border-[#181818] py-2 text-2xl transition duration-300 ease-in-out hover:bg-[#181818] hover:text-[#FFFDE6] flex justify-between items-center px-6">
+        Ir a contacto
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+    </button>
+
+</div>
 </div>
