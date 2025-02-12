@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -12,48 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-<script>
-    // Function to toggle black and white colors
-    function toggleColors() {
-        // Get all elements on the page
-        const allElements = document.querySelectorAll('*');
-
-        allElements.forEach(element => {
-            const computedStyle = getComputedStyle(element);
-
-            // Toggle background color
-            if (computedStyle.backgroundColor === 'rgb(0, 0, 0)') {
-                element.style.backgroundColor = 'white';
-            } else if (computedStyle.backgroundColor === 'rgb(255, 255, 255)') {
-                element.style.backgroundColor = 'black';
-            }
-
-            // Toggle text color
-            if (computedStyle.color === 'rgb(0, 0, 0)') {
-                element.style.color = 'white';
-            } else if (computedStyle.color === 'rgb(255, 255, 255)') {
-                element.style.color = 'black';
-            }
-        });
-
-        // Add the square to the color change
-        const square = document.getElementById('square');
-
-        if (getComputedStyle(square).backgroundColor === 'rgb(0, 0, 0)') {
-            square.style.backgroundColor = 'white';
-        } else if (getComputedStyle(square).backgroundColor === 'rgb(255, 255, 255)') {
-            square.style.backgroundColor = 'black';
-        }
-    }
-
-    // Attach the toggleColors function to the button click event
-    document.addEventListener('DOMContentLoaded', () => {
-        const button = document.getElementById('button');
-        button.addEventListener('click', toggleColors);
-    });
-</script>
 <body class="bg-black flex flex-col min-h-screen box-border text-white">
-    <div class="absolute bg-white w-50 h-50 mix-blend-difference top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-tr-[50%] rounded-br-[50%]" id="square"></div>
     
     <!-- Header section -->
     <div class="flex justify-between items-start p-8 box-border flex-1" id="s1">
@@ -61,15 +20,65 @@
         <div class="w-6 h-6 bg-white rounded-full" id="button" style="cursor: pointer;"></div>
     </div>
     
-    <!-- Centered section -->
-    <div class="flex-1 flex items-center justify-center flex-1">
-        <p class="text-4xl font-medium">Diego Soriano <br> Full-Stack Developer</p>
+    <!-- Sección central -->
+    <div class="flex-1 flex items-center justify-center flex-1" id="main-content">
+        <p class="text-4xl font-medium text-center">Diego Soriano <br> Full-Stack Developer</p>
     </div>
     
     <!-- Links section -->
-    <div class="flex flex-col items-start justify-start p-8 box-border space-y-1 flex-1 sm:justify-end">
+    <div class="flex flex-col items-start justify-start p-8 box-border space-y-1 flex-1 sm:justify-end" id="links-section">
+        <a href="#" id="figma-link" class="hover:bg-white hover:text-black w-fit active:bg-blue-500 active:text-amber-300">figma</a>
         <a href="https://github.com/diegosorianom" class="hover:bg-white hover:text-black w-fit active:bg-blue-500 active:text-amber-300">github</a>
         <a href="https://goblinscorps.itch.io/" class="hover:bg-white hover:text-black w-fit active:bg-blue-500 active:text-amber-300">itch.io</a>
+        <a href="https://tecnicajazor.com/" class="hover:bg-white hover:text-black w-fit active:bg-blue-500 active:text-amber-300">Formación Técnica Jazor</a>
     </div>
+
+    <!-- Nueva sección que se muestra al hacer clic en "figma" -->
+    <div id="figma-section" class="hidden flex-1 flex flex-col items-center ">
+        <div class="flex items-center mb-4">
+            <button id="back-button" class="mr-2 rounded-full p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+                </svg>
+            </button>
+            <h2 class="text-3xl font-bold">Diseños de Figma</h2>
+        </div>
+        <ul class="space-y-2 flex flex-col">
+            <li><a href="https://www.figma.com/design/S1i3oRhqDuZ6hgYufKFDIq/%5BTFG%5D-Dise%C3%B1o-aplicaci%C3%B3n-Framing?m=auto&t=L9kMt2oLarrc73yJ-1" class="text-blue-400 hover:underline">[TFG] Diseño aplicación</a></li>
+            <li><a href="https://www.figma.com/design/JACMr3Owv7TBFkj8QxWK5H/%5BTFG%5D-Dise%C3%B1o-de-marca-Framing?m=auto&t=L9kMt2oLarrc73yJ-1" class="text-blue-400 hover:underline">[TFG] Presentación de marca</a></li>
+            <li><a href="https://www.figma.com/design/fwvngNo6s7Es0e00iVHsOL/%5BTFG%5D-Bocetos-aplicacion-framing?m=auto&t=L9kMt2oLarrc73yJ-1" class="text-blue-400 hover:underline">[TFG] Bocetos aplicación</a></li>
+            <li><a href="https://www.figma.com/design/SaRjKups6cbRJ46rIjKXaM/%5BJazor%5D-Dise%C3%B1os?m=auto&t=L9kMt2oLarrc73yJ-1" class="text-blue-400 hover:underline">[Web] Formación Técnica Jazor</a></li>
+            <li><a href="https://www.figma.com/design/SaRjKups6cbRJ46rIjKXaM/%5BJazor%5D-Dise%C3%B1os?m=auto&t=L9kMt2oLarrc73yJ-1" class="text-blue-400 hover:underline">[Portfolio] Portfolio v4 "Kindle"</a></li>
+            <li><a href="https://www.figma.com/design/GsmBzLkNLyTQ3EFcNJB5p5/%5BPortfolio-002%5D-Portfolio?m=auto&t=L9kMt2oLarrc73yJ-1" class="text-blue-400 hover:underline">[Portfolio] Portfolio v2 </a></li>
+            <li><a href="https://www.figma.com/design/Pc5cVyNYVUdSJ1y0ROCAjo/%5BPortfolio-001%5D-WII-UI?m=auto&t=L9kMt2oLarrc73yJ-6" class="text-blue-400 hover:underline">[Portfolio] Portfolio v1 "Wii" </a></li>
+            <li><a href="https://www.figma.com/design/SvK7DK2Ve0nZFN0WVmkLMd/%5BClase-005%5D-Cine-Java?m=auto&t=L9kMt2oLarrc73yJ-6" class="text-blue-400 hover:underline">[Proyectos clase 04] Cine Java</a></li>
+            <li><a href="https://www.figma.com/design/owEutNHSrcF4b2iLkNPuC8/%5BClase-004%5D-Soundscopes?m=auto&t=L9kMt2oLarrc73yJ-6" class="text-blue-400 hover:underline">[Proyectos clase 03] Soundscopes</a></li>
+            <li><a href="https://www.figma.com/design/JeZDSkPVTUZi1j9FG41fVo/%5BClase-003%5D-Cines-OMEGA?m=auto&t=L9kMt2oLarrc73yJ-6" class="text-blue-400 hover:underline">[Proyectos clase 02] Cines Omega</a></li>
+            <li><a href="https://www.figma.com/design/vpOZ4rMJTFYoSq0RURSZu2/%5BClase-001%5D-Barras-y-estrellas?m=auto&t=L9kMt2oLarrc73yJ-6" class="text-blue-400 hover:underline">[Proyectos clase 01] Barras y estrellas</a></li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById("figma-link").addEventListener("click", function(event) {
+            event.preventDefault(); // Evita la redirección
+
+            // Ocultar secciones originales
+            document.getElementById("main-content").classList.add("hidden");
+            document.getElementById("links-section").classList.add("hidden");
+
+            // Mostrar la nueva sección centrada
+            document.getElementById("figma-section").classList.remove("hidden");
+        });
+
+        document.getElementById("back-button").addEventListener("click", function() {
+            // Mostrar secciones originales
+            document.getElementById("main-content").classList.remove("hidden");
+            document.getElementById("links-section").classList.remove("hidden");
+
+            // Ocultar la sección de Figma
+            document.getElementById("figma-section").classList.add("hidden");
+        });
+    </script>
+
 </body>
 </html>

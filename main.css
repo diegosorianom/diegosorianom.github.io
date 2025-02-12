@@ -10,3 +10,18 @@
 #s2 {
     font-family: 'Satoshi';
 }
+
+::selection {
+    background: white;
+    color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background: white;
+}
